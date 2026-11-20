@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Terror</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section id="inicio" class="pantalla">
+            <p class="etiqueta">¿TE ATREVES A JUGAR?</p>
+            <h1>QUIZ <span>DE TERROR</span></h1>
+            <p class="descripcion">Demuestra cuánto sabes sobre las películas que nos han quitado el sueño.</p>
+            <div class="detalles">
+                <span>10 preguntas</span>
+                <span>60 segundos por pregunta</span>
+                <span>Opción múltiple</span>
+            </div>
+            <button id="btnComenzar" class="boton-principal">COMENZAR</button>
+        </section>
+
+        <section id="juego" class="pantalla oculto">
+            <div class="barra-superior">
+                <span id="numeroPregunta">PREGUNTA 1 / 10</span>
+                <span id="puntaje">Puntos: 0</span>
+            </div>
+            <div class="tiempo-contenedor">
+                <div class="tiempo-texto">
+                    <span>TIEMPO</span>
+                    <span id="tiempo">10</span>
+                </div>
+                <div class="barra-tiempo">
+                    <div id="progresoTiempo"></div>
+                </div>
+            </div>
+            <article class="tarjeta">
+                <p class="categoria">PELÍCULAS DE TERROR</p>
+                <h2 id="pregunta">Pregunta</h2>
+                <div id="respuestas" class="respuestas"></div>
+                <p id="retroalimentacion" class="retroalimentacion"></p>
+                <button id="btnSiguiente" class="boton-principal oculto">SIGUIENTE</button>
+            </article>
+        </section>
+
+        <section id="final" class="pantalla oculto">
+            <p class="etiqueta">FIN DEL JUEGO</p>
+            <h1>¿SOBREVIVISTE?</h1>
+            <p id="resultadoFinal" class="resultado-final"></p>
+            <h2>RESULTADOS</h2>
+            <div id="listaResultados" class="lista-resultados"></div>
+            <button id="btnReiniciar" class="boton-principal">JUGAR OTRA VEZ</button>
+        </section>
+    </main>
+    <footer>QUIZ DE TERROR · ¿CUÁNTO SABES DEL CINE DE MIEDO?</footer>
+    <script src="script.js"></script>
+</body>
+</html>
